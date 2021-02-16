@@ -1,0 +1,130 @@
+/*Estilos Globales*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/*Variables de coleres y demas*/
+:root{
+    --primary-color: #00072D;
+    --secundary-color: #001C55;
+    --tertiary-color: #0A2472;
+    --quarternary-color: #0E6BA8;
+    --quinary-color: #A6E1FA;
+}
+/*Estilos Generales del HTML*/
+html{
+    font-family: 'Baloo 2', cursive;
+    font-size: 62.5%;
+}
+/*Estilos Generales del Body*/
+body{
+    background-color: var(--tertiary-color);
+}
+/*-----------------------------Estilos del Header----------------------------*/
+header{
+    width: 100vw;
+    height: 80px;
+    z-index: 20;
+    background-color: var(--secundary-color);
+    box-shadow: 0px 5px 10px 0px var(--primary-color);
+    display: relative;
+}
+/*---------------Estilos para el Logor--------------*/
+header .logo{
+    z-index: 20;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+header .logo img{
+    width: 80px;
+    height: 80px;
+}
+/*---------------Estilos del Nav-------------*/
+.nav{
+    width: 75vw;
+    height: 100vh;
+    z-index: 30;
+    background-color: var(--primary-color);
+    box-shadow: 25vw 0px 0px 0px #001C5580;
+    font-size: 2.5rem;
+    position: fixed;
+    display: flex;
+    left: -100vw;
+    transition:all 0.1s step-end;
+}
+.nav ul{
+    width: 200px;
+    margin: 80px auto;
+    flex-direction: column;
+}
+.nav ul li{
+    list-style-type: none;
+    border-bottom: 2px solid var(--quinary-color);
+}
+.nav ul li a{
+    padding-top: 10px;
+    padding-left: 5px;
+    color: var(--quinary-color);
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+}
+.nav ul li a:hover{
+    color: var(--primary-color);
+    background-color: var(--quinary-color);
+}
+/*Estilos del Icono Menu*/
+/*header .menu{
+    z-index: 19;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+}
+header .menu img{
+    width: 60px;
+    height: 60px;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    border-radius: 30%;
+    border: 1px solid var(--quinary-color);
+}*/
+.menuN{
+    z-index: 31;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    transition: all 0.4s ease;
+}
+.menuN img{
+    width: 60px;
+    height: 60px;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    cursor: pointer;
+    border-radius: 30%;
+    border: 1px solid var(--quinary-color);
+}
+#check{
+    display: none;
+}
+#check:checked ~ #uno{
+    left: 0vw;
+}
+/*----------------------------Estilos para el Main------------------------*/
+main{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main div p{
+    font-size: 10rem;
+    text-align: center;
+}
+
+
+
