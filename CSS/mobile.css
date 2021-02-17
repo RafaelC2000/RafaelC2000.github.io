@@ -111,7 +111,7 @@ header .menu img{
 #check{
     display: none;
 }
-#check:checked ~ #uno{
+#check:checked ~ nav{
     left: 0vw;
 }
 /*----------------------------Estilos para el Main------------------------*/

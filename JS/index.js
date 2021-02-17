@@ -1,4 +1,4 @@
-/*function accion(){
+function accion(){
     let d1;
-    d1=document.getElementById("1").style.left="0vw";
+    d1=document.getElementById("uno").style.left="0vw";
 }
