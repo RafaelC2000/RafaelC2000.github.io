@@ -121,12 +121,14 @@ main{
     flex-direction: column;
     justify-content: center;
 }
-main div p{
+main p{
     font-size: 10rem;
     text-align: center;
 }
+/*xd*/
+main {
 
-
+}
 
 
 
