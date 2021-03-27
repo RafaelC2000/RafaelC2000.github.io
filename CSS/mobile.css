@@ -20,6 +20,7 @@ html{
 }
 /*Estilos Generales del Body*/
 body{
+    z-index: 0;
     background-color: var(--tertiary-color);
 }
 /*-----------------------------Estilos del Header----------------------------*/
@@ -84,30 +85,33 @@ header .logo a{
     color: var(--primary-color);
     background-color: var(--quinary-color);
 }
-/*Estilos del Icono Menu*/
-/*header .menu{
-    z-index: 19;
+/*Estilos de los Iconos de Menu*/
+.menuN{
+    display: none;
     width: 80px;
     height: 80px;
     position: absolute;
+    transition: all 0.4s ease;/*Error, o afecta el funcionamiento, no se ejecuta en el tiempo dado*/
+    left: 75vw;
+    position: fixed;
 }
-header .menu img{
+.menuN img{
     width: 60px;
     height: 60px;
     padding: 10px 10px;
     margin: 10px 10px;
     border-radius: 30%;
     border: 1px solid var(--quinary-color);
-}*/
-.menuN{
+}
+/* el menu base*/
+.menuA{
     z-index: 31;
     width: 80px;
     height: 80px;
     position: absolute;
     transition: all 0.4s ease;
 }
-
-.menuN img{
+.menuA img{
     width: 60px;
     height: 60px;
     padding: 10px 10px;
@@ -122,7 +126,24 @@ header .menu img{
 #check:checked ~ #uno{
     left: 0px;
 }
-
+#check:checked ~ #menuN{
+    display: block;
+}
+#check:checked ~ #menuA{
+    z-index: 0;
+}
+#check2{
+    display: none;
+}
+#check2:checked ~ #uno{
+    left: -1000px;
+}
+#check2:checked ~ #menuA{
+    z-index: 31;
+}
+#check2:checked ~ #menuN{
+    display: none;
+}
 /*----------------------------Estilos para el Main------------------------*/
 main{
     width: 100vw;
