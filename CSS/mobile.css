@@ -1,3 +1,4 @@
+/* YA NO SE TOCA"/
 /*Estilos Globales*/
 * {
     box-sizing: border-box;
@@ -44,7 +45,7 @@ header .logo img{
     height: 80px;
 }
 /*---------------Estilos del Nav-------------*/
-.nav{
+#uno{
     width: 75vw;
     height: 100vh;
     z-index: 30;
@@ -53,8 +54,8 @@ header .logo img{
     font-size: 2.5rem;
     position: fixed;
     display: flex;
-    left: -100vw;
-    transition:all 0.1s step-end;
+    left: -1000px;
+    transition:all 0.2s step-end;
 }
 .nav ul{
     width: 200px;
@@ -108,12 +109,14 @@ header .menu img{
     border-radius: 30%;
     border: 1px solid var(--quinary-color);
 }
+
 #check{
     display: none;
 }
-#check:checked ~ nav{
-    left: 0vw;
+#check:checked ~ #uno{
+    left: 0px;
 }
+
 /*----------------------------Estilos para el Main------------------------*/
 main{
     width: 100vw;
