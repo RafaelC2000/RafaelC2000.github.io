@@ -92,14 +92,14 @@ header .logo a{
     width: 80px;
     height: 80px;
     position: absolute;
-    transition: all 0.4s ease;/*Error, o afecta el funcionamiento, no se ejecuta en el tiempo dado*/
+    transition:all 2s step-end;/*Error, o afecta el funcionamiento, no se ejecuta en el tiempo dado*/
     left: 75vw;
     position: fixed;
 }
 .menuN img{
     width: 60px;
     height: 60px;
-    padding: 10px 10px;
+    padding: 10px 10px; 
     margin: 10px 10px;
     border-radius: 30%;
     border: 1px solid var(--quinary-color);
