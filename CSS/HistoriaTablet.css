@@ -1,0 +1,38 @@
+.container{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    margin-top: 40px;
+   align-items: center;
+}
+.container .img-ernesto img{
+    width: 600px;
+    height: 600px;
+    border-radius: 300px;
+    box-shadow: 10px 10px 20px 0px var(--primary-color);
+
+}
+.texts{
+    width: 600px;
+    margin-top: 40px;
+    color: var(--quinary-color);
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+.texts .ernesto{
+    width: 440px;
+    font-size: 6.4rem;
+    font-weight: bold;
+    line-height: 8rem;
+}
+.texts .description{
+    margin-top: 40px;
+    font-size: 3.6rem;
+    line-height: 4.8rem;
+    font-weight: lighter;
+}
+.container .alien img{
+    width: 300px;
+    margin-top: 40px;
+}

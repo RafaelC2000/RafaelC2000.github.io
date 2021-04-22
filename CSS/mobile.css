@@ -33,6 +33,12 @@ header{
     display: relative;
 }
 /*---------------Estilos para el Logor--------------*/
+#LogoTablet{
+    display: none;
+}
+#LogoDesktop{
+    display: none;
+}
 header .logo{
     z-index: 20;
     width: 190px;
