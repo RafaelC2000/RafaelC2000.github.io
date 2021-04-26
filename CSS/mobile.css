@@ -169,9 +169,8 @@ header .logo a{
    font-size: 3.6rem;
    text-align: center;
 }
-.contenedor h1{
+h1{
     color: var(--quinary-color);
-
 }
 
 

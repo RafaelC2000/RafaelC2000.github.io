@@ -102,4 +102,5 @@ nav{
     margin: 50px;
     font-size: 3.6rem;
     text-align: center;
+    color: var(--quinary-color);
 }
