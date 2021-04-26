@@ -91,16 +91,28 @@ nav{
 .contenedor{
  display: flex;
  justify-content: center;
+ align-items: center;
+ margin-top: 40px;
 }
-.contenedor img{
+.contenedor .collage{
+    width: 50%;
+}
+img{
+    display: block;
     width: 500px;
     height: 500px;
+    margin: auto;
 }
 .contenedor .bienvenida{
     display: block;
-    width: 500px;
-    margin: 50px;
-    font-size: 3.6rem;
+    width: 50%;
     text-align: center;
     color: var(--quinary-color);
+}
+h1{
+    font-size: 8rem;
+    line-height: 10rem;
+}
+h2{
+    font-size: 4rem;
 }
