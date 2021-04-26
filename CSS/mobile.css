@@ -151,20 +151,28 @@ header .logo a{
 #check2:checked ~ #menuN{
     display: none;
 }
-/*----------------------------Estilos para el Main------------------------*/
-main{
-    width: 100vw;
+/*-------------------------Bienvenida------------------------*/
+.contenedor{
     display: flex;
-    flex-direction: column;
+    flex-flow: wrap;
     justify-content: center;
 }
-main p{
-    font-size: 10rem;
-    text-align: center;
+.contenedor img{
+   width: 500px;
+   height: 500px;
 }
+.contenedor .bienvenida{
+   display: block;
+   width: 500px;
+   margin: 50px;
+   color: var(--quinary-color);
+   font-size: 3.6rem;
+   text-align: center;
+}
+.contenedor h1{
+    color: var(--quinary-color);
 
-
-
+}
 
 
 

@@ -90,12 +90,16 @@ nav{
 /*-------------------------Bienvenida------------------------*/
 .contenedor{
  display: flex;
- 
+ justify-content: center;
 }
 .contenedor img{
     width: 500px;
     height: 500px;
 }
 .contenedor .bienvenida{
+    display: block;
+    width: 500px;
+    margin: 50px;
     font-size: 3.6rem;
+    text-align: center;
 }
