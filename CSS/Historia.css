@@ -1,3 +1,4 @@
+/*Presentación*/
 .container{
     display: flex;
     flex-flow: column;
@@ -36,4 +37,151 @@
 .container .alien img{
     width: 150px;
     margin-top: 20px;
+}
+/*De dónde soy*/
+.p1{
+    width: 100vw;
+    background-color: var(--quarternary-color);
+    box-shadow: 0px 10px 20px 0px rgba(0, 7, 45, 0.5);
+}
+.p1 .pregunta1{
+    width: 100%;
+    height: 180px;
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.p1 .pregunta1 img{
+    width: 100%;
+    height: 180px;
+    max-width: 360px;
+}
+.p1 .pregunta1 h3{
+    position: absolute;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 3.8rem;
+    background: rgba(14, 107, 168, 0.8);
+    top: 50%;
+    transform: translateY(-50%);
+}
+.p1 .respuesta1{
+    width: 100vw;
+}
+.p1 .respuesta1 p{
+    width: 300px;
+    margin: 0 auto;
+    padding: 10px 0px;  
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2.5rem;
+}
+/*A dónde voy*/
+.p2{
+    width: 100vw;
+    background-color: var(--quarternary-color);
+    box-shadow: 0px 10px 20px 0px rgba(0, 7, 45, 0.5);
+}
+.p2 .pregunta2{
+    width: 100%;
+    height: 180px;
+    position: relative;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+.p2 .pregunta2 img{
+    width: 100%;
+    height: 180px;
+    max-width: 360px;
+}
+.p2 .pregunta2 h3{
+    position: absolute;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 3.8rem;
+    background: rgba(14, 107, 168, 0.8);
+    top: 50%;
+    transform: translateY(-50%);
+}
+.p2 .respuesta2{
+    width: 100vw;
+
+}
+.p2 .respuesta2 p{
+    width: 300px;
+    margin: 0 auto;
+    padding: 10px 0px;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2.5rem;
+}
+/*Habilidades*/
+.Habilidades{
+    margin-top: 80px;
+    width: 100vw;
+    background-color: var(--quinary-color);
+    box-shadow: 0px 10px 20px 0px rgba(0, 7, 45, 0.5);
+    position: relative;
+}
+.Habilidades h3{
+    position: absolute;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 3.8rem;
+    background: rgba(14, 107, 168, 0.8);
+    top: 50px;
+}
+.Habilidades .Icons{
+    width: 300px;
+    padding-top: 130px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+.Habilidades .Icons img{
+    width: 100px;
+    padding: 20px;
+}
+/*Aptitudes*/
+.Aptitudes{
+    margin: 80px 0;
+    width: 100vw;
+    background-color: var(--quinary-color);
+    box-shadow: 0px 10px 20px 0px rgba(0, 7, 45, 0.5);
+    position: relative;
+}
+.Aptitudes h3{
+    position: absolute;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 3.8rem;
+    background: rgba(14, 107, 168, 0.8);
+    top: 50px;
+}
+.Aptitudes ul{
+    width: 150px;
+    padding-top: 130px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 4rem;
+    text-align: left;
 }
