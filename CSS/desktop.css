@@ -24,107 +24,78 @@ body{
 /*-----------------------------Estilos del Header----------------------------*/
 header{
     width: 100vw;
-    height: 80px;
+    height: 100px;
     z-index: 20;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--secundary-color);
     box-shadow: 0px 5px 10px 0px var(--primary-color);
-    display: relative;
 }
 /*---------------Estilos para el Logor--------------*/
-header .logo{
-    z-index: 20;
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+#LogoTablet{
+    display: none;
 }
-header .logo img{
-    width: 80px;
+#LogoMobile{
+    display: none;
+}
+.logo{
+    z-index: 20;
+    width: 240px;
+    height: 100px;
+    padding: 10px;
+    margin-left: 30px;
+}
+.logo img{
+    width: 220px;
     height: 80px;
 }
 /*---------------Estilos del Nav-------------*/
+nav{
+}
 .nav{
-    width: 75vw;
-    height: 100vh;
-    z-index: 30;
-    background-color: var(--primary-color);
-    box-shadow: 25vw 0px 0px 0px #001C5580;
-    font-size: 2.5rem;
-    position: fixed;
-    display: flex;
-    left: -100vw;
-    transition:all 0.1s step-end;
+    font-size: 2.4rem;
 }
 .nav ul{
-    width: 200px;
-    margin: 80px auto;
-    flex-direction: column;
+    display: flex;
 }
 .nav ul li{
     list-style-type: none;
-    border-bottom: 2px solid var(--quinary-color);
+    border-left: 3px solid var(--quinary-color);
 }
 .nav ul li a{
-    padding-top: 10px;
-    padding-left: 5px;
+    display: block;
+    padding: 0 20px;
     color: var(--quinary-color);
     text-decoration: none;
     cursor: pointer;
-    display: block;
 }
 .nav ul li a:hover{
     color: var(--primary-color);
     background-color: var(--quinary-color);
 }
-/*Estilos del Icono Menu*/
-/*header .menu{
-    z-index: 19;
-    width: 80px;
-    height: 80px;
-    position: absolute;
-}
-header .menu img{
-    width: 60px;
-    height: 60px;
-    padding: 10px 10px;
-    margin: 10px 10px;
-    border-radius: 30%;
-    border: 1px solid var(--quinary-color);
-}*/
-.menuN{
-    z-index: 31;
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    transition: all 0.4s ease;
-}
-.menuN img{
-    width: 60px;
-    height: 60px;
-    padding: 10px 10px;
-    margin: 10px 10px;
-    cursor: pointer;
-    border-radius: 30%;
-    border: 1px solid var(--quinary-color);
-}
+/*----------------------------Deshabilitación de funciones en movil------------------------*/
 #check{
     display: none;
 }
-#check:checked ~ #uno{
-    left: 0vw;
+#check2{
+    display: none;
 }
-/*----------------------------Estilos para el Main------------------------*/
-main{
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+#menuN{
+    display: none;
 }
-main div p{
-    font-size: 10rem;
-    text-align: center;
+#menuA{
+    display: none;
 }
-
-
-
+/*-------------------------Bienvenida------------------------*/
+.contenedor{
+ display: flex;
+ 
+}
+.contenedor img{
+    width: 500px;
+    height: 500px;
+}
+.contenedor .bienvenida{
+    font-size: 3.6rem;
+}
