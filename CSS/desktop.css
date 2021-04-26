@@ -12,6 +12,10 @@
     --quarternary-color: #0E6BA8;
     --quinary-color: #A6E1FA;
 }
+/*Eliminacion del Scroll*/
+::-webkit-scrollbar{
+    display: none;
+}
 /*Estilos Generales del HTML*/
 html{
     font-family: 'Baloo 2', cursive;
