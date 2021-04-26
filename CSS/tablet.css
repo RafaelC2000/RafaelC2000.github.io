@@ -151,19 +151,29 @@ header .logo a{
 #check2:checked ~ #menuN{
     display: none;
 }
-/*----------------------------Estilos para el Main------------------------*/
-main{
-    width: 100vw;
+/*-------------------------Bienvenida------------------------*/
+.contenedor{
     display: flex;
-    flex-direction: column;
+    flex-flow: wrap;
     justify-content: center;
+    align-items: center;
+    margin-top: 40px;
 }
-main p{
-    font-size: 10rem;
-    text-align: center;
+.contenedor img{
+   width: 500px;
+   height: 500px;
 }
-
-
+.contenedor .bienvenida{
+   display: block;
+   color: var(--quinary-color);
+   text-align: center;
+}
+h1{
+    margin-top: 40px;
+    font-size: 8rem;
+    line-height: 10rem;
+    font-weight: bolder;
+}
 
 
 
