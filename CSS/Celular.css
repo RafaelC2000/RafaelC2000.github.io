@@ -14,6 +14,10 @@
     --quinary-color: #FFFFFF;
     --senary-color: #C9002B;
 }
+/*Eliminacion del Scroll*/
+::-webkit-scrollbar{
+    display: none;
+}
 /*Estilos Generales del HTML*/
 html{
     font-family: 'Baloo 2', cursive;
@@ -104,8 +108,8 @@ header .logo a{
 /*Estilos de los Iconos de Menu*/
 .menuN{
     display: none;
-    width: 80px;
-    height: 80px;
+    width: 25vw;
+    height: 100vh;
     position: absolute;
     transition:all 2s step-end;/*Error, o afecta el funcionamiento, no se ejecuta en el tiempo dado*/
     left: 75vw;
@@ -114,10 +118,7 @@ header .logo a{
 .menuN img{
     width: 60px;
     height: 60px;
-    padding: 10px 10px; 
-    margin: 10px 10px;
-    border-radius: 30%;
-    border: 1px solid var(--quinary-color);
+    margin-top: 10px;
 }
 /* el menu base*/
 .menuA{
@@ -143,7 +144,9 @@ header .logo a{
     left: 0px;
 }
 #check:checked ~ #menuN{
-    display: block;
+    display: flex;
+    justify-content: center;
+    z-index: 40;
 }
 #check:checked ~ #menuA{
     z-index: 0;
