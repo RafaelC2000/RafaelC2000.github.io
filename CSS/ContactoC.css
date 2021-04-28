@@ -1,0 +1,55 @@
+/*---------------Contenedor-------------*/
+.container{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-flow: wrap;
+}
+/*-------------Contactos--------------*/
+.container .contacto{
+    width: 300px;
+    margin: 0px auto 5px;
+    display: flex;
+
+}
+/*--------------Iconos Contacto---------*/
+.container .icono{
+    width: 90px;
+    height: 90px;
+    margin-right: 5px;
+    border-radius: 45px;
+    background-color: var(--quinary-color);
+    box-shadow: 5px 5px 10px 5px rgba(10, 36, 114, 0.25) inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+/*--------------Textos-------------*/
+.contacto .texto{
+    width: 210px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 45px;
+    background-color: var(--quinary-color);
+    color: var(--senary-color);
+    font-size: 24px;
+    line-height: 2.8rem;
+    text-align: center;
+    box-shadow: 5px 5px 10px 5px rgba(10, 36, 114, 0.25) inset;
+}
+#xd{
+    font-size: 16px;
+}
+/*--------------Telefono------------*/
+.telefono{
+    width: 100%;
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+}
+.telefono img{
+    width: 100px; 
+}
