@@ -84,6 +84,7 @@
 /*A dónde voy*/
 .p2{
     width: 100vw;
+    margin-top: 80px;
     border-radius: 10px;
     background-color: var(--quarternary-color);
     box-shadow: 0px 10px 20px 0px rgba(0, 7, 45, 0.5);
