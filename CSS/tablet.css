@@ -5,18 +5,25 @@
     padding: 0;
     margin: 0;
 }
+
 /*Variables de coleres y demas*/
 :root{
     --primary-color: #00072D;
     --secundary-color: #001C55;
     --tertiary-color: #0A2472;
     --quarternary-color: #0E6BA8;
-    --quinary-color: #A6E1FA;
+    --quinary-color: #FFFFFF;
+    --senary-color: #C9002B;
+}
+/*Eliminacion del Scroll*/
+::-webkit-scrollbar{
+    display: none;
 }
 /*Estilos Generales del HTML*/
 html{
     font-family: 'Baloo 2', cursive;
     font-size: 62.5%;
+    color: var(--primary-color);
 }
 /*Estilos Generales del Body*/
 body{
@@ -90,13 +97,19 @@ header .logo a{
 }
 .nav ul li a:hover{
     color: var(--primary-color);
-    background-color: var(--quinary-color);
+    background-color: var(--senary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+#Activo{
+    color: var(--primary-color);
+    background-color: var(--senary-color);
+    border-bottom: 2px solid var(--primary-color);
 }
 /*Estilos de los Iconos de Menu*/
 .menuN{
     display: none;
-    width: 100px;  /*aumento de dimensiones a 100 en todo el header*/
-    height: 100px;
+    width: 25vw;
+    height: 100vh;
     position: absolute;
     transition:all 2s step-end;/*Error, o afecta el funcionamiento, no se ejecuta en el tiempo dado*/
     left: 75vw;
@@ -105,10 +118,8 @@ header .logo a{
 .menuN img{
     width: 80px;
     height: 80px;
-    padding: 10px 10px; 
-    margin: 10px 10px;
-    border-radius: 30%;
-    border: 1px solid var(--quinary-color);
+    margin-top: 10px;
+    border-radius: 30px;
 }
 /* el menu base*/
 .menuA{
@@ -121,10 +132,8 @@ header .logo a{
 .menuA img{
     width: 80px;
     height: 80px;
-    padding: 10px 10px;
-    margin: 10px 10px;
-    border-radius: 30%;
-    border: 1px solid var(--quinary-color);
+    margin: 10px;
+    border-radius: 20px;
 }
 
 #check{
@@ -134,7 +143,9 @@ header .logo a{
     left: 0px;
 }
 #check:checked ~ #menuN{
-    display: block;
+    display: flex;
+    justify-content: center;
+    z-index: 40;
 }
 #check:checked ~ #menuA{
     z-index: 0;
@@ -162,19 +173,45 @@ header .logo a{
 .contenedor img{
    width: 500px;
    height: 500px;
+   box-shadow: 0px 0px 20px 20px rgba(0, 7, 45, 0.5);
+   border-radius: 50px;
 }
-.contenedor .bienvenida{
-   display: block;
-   color: var(--quinary-color);
-   text-align: center;
-}
+.bienvenida{
+    display: block;
+    width: 500px;
+    color: var(--quinary-color);
+    text-align: center;
+    margin-top: 30px;
+ }
 h1{
     margin-top: 40px;
     font-size: 8rem;
     line-height: 10rem;
-    font-weight: bolder;
+    font-weight: normal;
 }
-
+/*----------------Redes----------------*/
+.redes{
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+}
+.redes img{
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    box-shadow: inherit;
+}
+/*--------------Seccion 2--------*/
+.seccion2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+span.b{
+    color: var(--senary-color);
+}
 
 
 
