@@ -191,8 +191,7 @@ h1{
 }
 /*----------------Redes----------------*/
 .redes{
-    position: absolute;
-    bottom: 20px;
+    position: relative;
     display: flex;
     width: 300px;
     justify-content: space-around;
@@ -208,10 +207,9 @@ h1{
     width: 100%;
     display: flex;
     justify-content: center;
+    flex-flow: wrap;
 }
 span.b{
     color: var(--senary-color);
 }
-
-
 
