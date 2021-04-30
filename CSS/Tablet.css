@@ -1,0 +1,215 @@
+/* YA NO SE TOCA"/
+/*Estilos Globales*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*Variables de coleres y demas*/
+:root{
+    --primary-color: #00072D;
+    --secundary-color: #001C55;
+    --tertiary-color: #0A2472;
+    --quarternary-color: #0E6BA8;
+    --quinary-color: #FFFFFF;
+    --senary-color: #C9002B;
+}
+/*Eliminacion del Scroll*/
+::-webkit-scrollbar{
+    display: none;
+}
+/*Estilos Generales del HTML*/
+html{
+    font-family: 'Baloo 2', cursive;
+    font-size: 62.5%;
+    color: var(--primary-color);
+}
+/*Estilos Generales del Body*/
+body{
+    z-index: 0;
+    background-color: var(--tertiary-color);
+}
+/*-----------------------------Estilos del Header----------------------------*/
+header{
+    width: 100vw;
+    height: 100px;/*Ahora son 100*/
+    z-index: 20;
+    background-color: var(--secundary-color);
+    box-shadow: 0px 10px 15px 0px var(--primary-color);/*Aumentamos la sombra*/
+    display: relative;
+}
+/*---------------Estilos para el Logor--------------*/
+#LogoMobile{
+    display: none;
+}
+#LogoDesktop{
+    display: none;
+}
+header .logo{
+    z-index: 20;
+    width: 240px;
+    height: 100px;
+    padding: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+header .logo img{
+    width: 220px;
+    height: 80px;
+}
+header .logo a{
+    width: 0px;
+    height: 0px;
+    cursor: pointer;
+    display: block;
+}
+/*---------------Estilos del Nav-------------*/
+#uno{
+    width: 75vw;
+    height: 100vh;
+    z-index: 30;
+    background-color: var(--primary-color);
+    box-shadow: 25vw 0px 0px 0px #001C5580;
+    font-size: 4rem;    /*Aumento de 2.5 a 4 rem*/
+    position: fixed;
+    display: flex;
+    left: -1000px;
+    transition:all 0.2s step-end;
+}
+.nav ul{
+    width: 360px; /*de 200 a 360*/
+    margin: 100px auto;  /*de 80 a 100 por el nav*/
+    flex-direction: column;
+}
+.nav ul li{
+    list-style-type: none;
+    border-bottom: 4px solid var(--quinary-color);
+}
+.nav ul li a{
+    padding-top: 20px;
+    padding-left: 5px;
+    color: var(--quinary-color);
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+}
+.nav ul li a:hover{
+    color: var(--primary-color);
+    background-color: var(--senary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+#Activo{
+    color: var(--primary-color);
+    background-color: var(--senary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+/*Estilos de los Iconos de Menu*/
+.menuN{
+    display: none;
+    width: 25vw;
+    height: 100vh;
+    position: absolute;
+    transition:all 2s step-end;/*Error, o afecta el funcionamiento, no se ejecuta en el tiempo dado*/
+    left: 75vw;
+    position: fixed;
+}
+.menuN img{
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+    border-radius: 30px;
+}
+/* el menu base*/
+.menuA{
+    z-index: 31;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    transition: all 0.4s ease;
+}
+.menuA img{
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+#check{
+    display: none;
+}
+#check:checked ~ #uno{
+    left: 0px;
+}
+#check:checked ~ #menuN{
+    display: flex;
+    justify-content: center;
+    z-index: 40;
+}
+#check:checked ~ #menuA{
+    z-index: 0;
+}
+#check2{
+    display: none;
+}
+#check2:checked ~ #uno{
+    left: -1000px;
+}
+#check2:checked ~ #menuA{
+    z-index: 31;
+}
+#check2:checked ~ #menuN{
+    display: none;
+}
+/*-------------------------Bienvenida------------------------*/
+.contenedor{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.contenedor img{
+   width: 500px;
+   height: 500px;
+   box-shadow: 0px 0px 20px 20px rgba(0, 7, 45, 0.5);
+   border-radius: 50px;
+}
+.bienvenida{
+    display: block;
+    width: 500px;
+    color: var(--quinary-color);
+    text-align: center;
+    margin-top: 30px;
+ }
+h1{
+    margin-top: 40px;
+    font-size: 8rem;
+    line-height: 10rem;
+    font-weight: normal;
+}
+/*----------------Redes----------------*/
+.redes{
+    position: relative;
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+}
+.redes img{
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    box-shadow: inherit;
+}
+/*--------------Seccion 2--------*/
+.seccion2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+}
+span.b{
+    color: var(--senary-color);
+}
+
