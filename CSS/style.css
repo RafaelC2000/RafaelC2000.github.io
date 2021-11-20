@@ -1,0 +1,223 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --blue: #13219A;
+    --strong-blue: #1900B2;
+}
+html{
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    max-width: 1920px;
+    max-height: 1080px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-image: linear-gradient(0deg, rgba(0, 23, 232, 0.35), rgba(0, 23, 232, 0.35)), url('https://i.ibb.co/VMBpdbY/carlos-aranda-v-X-Cn-JXr-Wf-Y-unsplash-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:local;
+}
+.top{
+    width: 86%;
+    height: 60px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 20px;
+}
+.language{
+    padding: 3px;
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+}
+.language .spanish{
+    padding: 2px;
+    display: inline-block;
+    cursor: pointer;
+}
+.language .english{
+    padding: 2px;
+    display: inline-block;
+    cursor: pointer;
+}
+.language_selected{
+    color: var(--strong-blue);
+}
+.nav{
+    display: flex;
+    flex-flow: row;
+    list-style: none;
+}
+.nav li a{
+    text-decoration: none;
+    margin-left: 40px;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: white;
+}
+.main_header{
+    width: 90%;
+    height: 300px;
+    display: flex;
+    flex-flow: row;
+    align-self: center;
+    align-items: center;
+    position: absolute;
+    color: white;
+}
+.main_header .image{
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+.main_header .image img{
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+}
+.main_header .space{
+    width: 5%;
+    height: 100%;
+}
+.main_header .content_header{
+    width: 55%;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.content_header h3{
+    font-size: 2rem;
+    font-weight: 400;
+}
+.content_header h1{
+    color: var(--strong-blue);
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.content_header .media_links{
+    width: 100%;
+    height: 60px;
+    margin-top: 5px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.media_links img{
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.media_links .download_cv{
+    font-size: 1rem;
+    line-height: 20px;
+    font-weight: 600;
+    color: rgba(256, 256, 256, 0.6);
+    background-color: var(--strong-blue);
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+section{
+    width: 100%;
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+.skills-contact{
+    width: 90%;
+    min-height: 400px;
+    max-height: 600px;
+    display: flex;
+    flex-flow: wrap;
+}
+.skills-contact .skills{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--blue);
+}
+.skills h3{
+    margin: 20px 0;
+    line-height: 40px;
+    font-size: 2rem;
+    font-weight: 500;
+    color: white;
+}
+.skills-contact .contact{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+.contact h3{
+    margin: 20px 0;
+    line-height: 40px;
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--blue);
+}
+.contact .content_contact{
+    width: 60%;
+    margin: 20px 0;
+}
+.content_contact .section_contact{
+    width: 100%;
+    height: 60px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+}
+.section_contact .image_contact{
+    width: 20%;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+.section_contact .text_contact{
+    width: 80%;
+    margin-left: 40px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+}
+.text_contact a{
+    text-decoration: none;
+    color: var(--blue);
+}
+.github_contact, .linkedin_contact{
+    width: 54px;
+    height: 54px;
+    padding: 3px;
+}
+footer{
+    width: 100%;
+    height: 80px;
+    position: relative;
+    bottom: 0px;
+    background-color: var(--blue);
+}
+.copyright{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgb(256, 256, 256, 0.9);
+}
