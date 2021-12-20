@@ -15,13 +15,15 @@ header{
     height: 100vh;
     max-width: 1920px;
     max-height: 1080px;
+    margin: 0 auto;
+    position: relative;
     display: flex;
     justify-content: center;
-    position: relative;
-    background-image: linear-gradient(0deg, rgba(0, 23, 232, 0.35), rgba(0, 23, 232, 0.35)), url('https://i.ibb.co/VMBpdbY/carlos-aranda-v-X-Cn-JXr-Wf-Y-unsplash-1.jpg');
+    background-image: linear-gradient(0deg, rgba(0, 23, 232, 0.35), rgba(0, 23, 232, 0.35)), url('https://i.ibb.co/7RMRHny/pexels-andre-3579433.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment:local;
+    background-position: center;
 }
 .top{
     width: 86%;
@@ -31,6 +33,9 @@ header{
     justify-content: space-between;
     align-items: center;
     top: 20px;
+}
+.top .menu{
+    display: none;
 }
 .language{
     padding: 3px;
@@ -93,6 +98,13 @@ header{
     font-size: 1.5rem;
     font-weight: 400;
 }
+@media screen and (min-width: 1500px){
+    .main_header .content_header{
+        width: 40%;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+}
 .content_header h3{
     font-size: 2rem;
     font-weight: 400;
@@ -121,12 +133,16 @@ header{
     font-size: 1rem;
     line-height: 20px;
     font-weight: 600;
-    color: rgba(256, 256, 256, 0.6);
+    font-family: 'Poppins', sans-serif;
+    color: rgba(256, 256, 256, 0.7);
     background-color: var(--strong-blue);
     padding: 10px;
     border: none;
     border-radius: 20px;
     cursor: pointer;
+}
+.media_links .contact{
+    display: none;
 }
 section{
     width: 100%;
@@ -134,25 +150,86 @@ section{
     display: flex;
     justify-content: center;
 }
-.skills-contact{
-    width: 90%;
-    min-height: 400px;
-    max-height: 600px;
+.tables{
+    width: 100%;
     display: flex;
-    flex-flow: wrap;
+    justify-content: center;
+}
+.tables h3{
+    margin: 20px 0;
+    line-height: 40px;
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--strong-blue);
+}
+.tables .slide_skills{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+.slide_skills .table_skills{
+    width: 100%;
+}
+.table_skills tbody{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-content: space-evenly;
+    flex-flow: column wrap;
+}
+.tables tr{
+    width: 320px;
+    height: 50px;
+    display: flex;
+}
+.tables .skill{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skill img{
+    width: 40px;
+    height: 40px;
+}
+.content_portfolio{
+    width: 90%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+.content_portfolio h3{
+    width: 100%;
+    line-height: 40px;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    color: var(--strong-blue);
+}
+.content_cards{
+    width: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.card{
+    width: 250px;
+    height: 250px;
+    margin: 20px 20px;
+    background-color: var(--blue);
 }
 .skills-contact .skills{
     width: 50%;
     display: flex;
     justify-content: center;
     background-color: var(--blue);
-}
-.skills h3{
-    margin: 20px 0;
-    line-height: 40px;
-    font-size: 2rem;
-    font-weight: 500;
-    color: white;
 }
 .skills-contact .contact{
     width: 50%;
