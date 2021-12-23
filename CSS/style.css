@@ -146,7 +146,7 @@ header{
 }
 section{
     width: 100%;
-    margin: 40px 0;
+    margin-top: 40px;
     display: flex;
     justify-content: center;
 }
@@ -174,31 +174,96 @@ section{
 }
 .table_skills tbody{
     width: 100%;
-    height: 300px;
+    height: 350px;
     display: flex;
     align-content: space-evenly;
     flex-flow: column wrap;
 }
 .tables tr{
-    width: 320px;
+    width: 30%;
+    min-width: 260px;
     height: 50px;
+    border-radius: 5px;
+    margin: 0px 10px 20px;
+    background-color: #1900B233;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px #1900B233;
     display: flex;
 }
 .tables .skill{
     width: 50px;
     height: 50px;
-    margin-right: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.tables .define{
+    min-width: 180px;
+    max-width: 220px;
+    margin-left: 10px;
+}
 .skill img{
     width: 40px;
     height: 40px;
+    margin: 5px;
+}
+.html h5{
+    color: #E44D26;
+}
+.css h5{
+    color: #264DE4;
+}
+.js h5{
+    color: #e4c709;
+}
+.jquery h5{
+    color: #0868AC;
+}
+.html h5{
+    color: #E44D26;
+}
+.sass h5{
+    color: #CB6699;
+}
+.bootstrap h5{
+    color: #9013FE;
+}
+.figma h5 span:nth-child(1){
+    color: #E44D26;
+}
+.figma h5 span:nth-child(2){
+    color: #FF7262;
+}
+.figma h5 span:nth-child(3){
+    color: #9013FE;
+}
+.figma h5 span:nth-child(4){
+    color: #1ABCFE;
+}
+.figma h5 span:nth-child(5){    
+    color: #0ACF83;
+}
+.ph h5{
+    color: #23a7cf;
+}
+.ai h5{
+    color: #FF7F18;
+}
+.git h5{
+    color: #DE4C36;
+}
+.define h5{
+    font-size: 15px;
+    line-height: 15px;
+    padding: 1px;
+}
+.define p{
+    font-size: 14px;
+    line-height: 14px;
+    padding: 1px;
 }
 .content_portfolio{
     width: 90%;
-    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
