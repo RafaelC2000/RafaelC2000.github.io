@@ -273,6 +273,7 @@ section{
 }
 .content_portfolio h3{
     width: 100%;
+    margin: 20px 0;
     line-height: 40px;
     font-size: 2rem;
     font-weight: 500;
@@ -281,7 +282,6 @@ section{
 }
 .content_cards{
     width: auto;
-    margin-top: 20px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
@@ -305,12 +305,11 @@ section{
     align-items: center;
     flex-flow: column;
 }
-.contact h3{
-    margin: 20px 0;
+.contact h3{margin: 20px 0;
     line-height: 40px;
     font-size: 2rem;
     font-weight: 500;
-    color: var(--blue);
+    color: var(--strong-blue);
 }
 .contact .content_contact{
     width: 60%;
