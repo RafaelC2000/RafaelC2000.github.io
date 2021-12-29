@@ -20,7 +20,7 @@ header{
     width: 20%;
     height: 100vh;
     right: 0;
-    top: -1000px;
+    top: -1400px;
     position: fixed;
     display: flex;
     justify-content: center;
@@ -223,14 +223,11 @@ section{
     line-height: 12px;
     padding: 1px;
 }
-.skills-contact{
-    display: none;
-}
 .card{
     margin: 0px 20px 10px;
 }
 .content_portfolio h3{
-    margin: 10px 0px;
+    margin: 5px 0px 10px;
 }
 footer{
     height: 60px;
