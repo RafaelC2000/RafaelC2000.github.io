@@ -36,7 +36,7 @@ header{
     min-width: 200px;
     height: 100vh;
     position: fixed;
-    top: -1000px;
+    top: -110%;
     left: 0;
     display: flex;
     justify-content: space-evenly;
@@ -225,6 +225,12 @@ section{
 }
 .skills-contact{
     display: none;
+}
+.card{
+    margin: 0px 20px 10px;
+}
+.content_portfolio h3{
+    margin: 10px 0px;
 }
 footer{
     height: 60px;

@@ -151,17 +151,19 @@ section{
     display: flex;
     justify-content: center;
 }
+section h3{
+    width: 100%;
+    margin: 20px 0px;
+    line-height: 40px;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    color: var(--strong-blue);
+}
 .tables{
     width: 100%;
     display: flex;
     justify-content: center;
-}
-.tables h3{
-    margin: 20px 0;
-    line-height: 40px;
-    font-size: 2rem;
-    font-weight: 500;
-    color: var(--strong-blue);
 }
 .tables .slide_skills{
     width: 80%;
@@ -262,7 +264,7 @@ section{
     font-size: 14px;
     line-height: 14px;
     padding: 1px;
-    color: var(--strong-blue);
+    color: black;
 }
 .content_portfolio{
     width: 90%;
@@ -271,27 +273,160 @@ section{
     align-items: center;
     flex-flow: column;
 }
-.content_portfolio h3{
-    width: 100%;
-    margin: 20px 0;
-    line-height: 40px;
-    font-size: 2rem;
-    font-weight: 500;
-    text-align: center;
-    color: var(--strong-blue);
-}
 .content_cards{
     width: auto;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
 }
+/*Styles for projects cards*/
 .card{
     width: 250px;
     height: 250px;
-    margin: 20px 20px;
+    position: relative;
+    margin: 0px 20px 40px;
     background-color: var(--blue);
+    overflow: hidden;
 }
+.card img{
+    width: 100%;
+    height: 100%;
+}
+.card .content_card{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #89a4fc40;
+    backdrop-filter: blur(3px);
+    display: flex;
+    align-items: flex-end;
+    flex-flow: column;
+}
+@media screen and (min-width: 1025px){
+    .card .content_card{
+        transform: translateX(100%);
+        transition:all 0.4s ease-out;
+    }
+}
+/*Styles for projects links*/
+.project_links{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+.project_link, .github_link{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project_link a, .github_link a{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.project_link img{
+    width: 20px;
+    height: 20px;
+}
+.github_link img{
+    width: 22px;
+    height: 22px;
+}
+/*Styles for projects names*/
+.content_card h4{
+    width: 100%;
+    height: 35px;
+    padding-left: 10px;
+    font-size: 1.5rem;
+    color: var(--strong-blue)
+}
+/*Styles for projects text*/
+.content_card .description{
+    width: 100%;
+    height: 100px;
+    padding-left: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+}
+/*Styles for projects tags*/
+.content_card .tags{
+    width: 60%;
+    height: 75px;
+    padding: 5px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-content: flex-end;
+}
+.tags .tag{
+    height: 20px;
+    display: inline-block;
+    padding: 2px 4px;
+    margin: 0 3px;
+    border-radius: 10px;
+    font-size: 12px;
+    line-height: 14px;
+}
+.tag_html{
+    border: 1px solid #E44D26;
+    color: #E44D26;
+}
+.tag_css{
+    border: 1px solid #264DE4;
+    color: #264DE4;
+}
+.tag_js{
+    border: 1px solid #e4c709;
+    color: #e4c709;
+}
+.tag_app{
+    border: 1px solid #3f3f3f;
+    color: #3f3f3f;
+}
+.tag_matematicas{
+    border: 1px solid #f53932;
+    color: #f53932;
+}
+.tag_html{
+    border: 1px solid #E44D26;
+    color: #E44D26;
+}
+.tag_landing{
+    border: 1px solid #1306ca;
+    color: #1306ca;
+}
+.tag_responsive{
+    border: 1px solid #07b801;
+    color: #07b801;
+}
+.tag_uiux{
+    border: 1px solid #a405b9;
+    color: #a405b9;
+}
+/*Styles for Carta de Smith*/
+#cartaDeSmith:hover .content_card{
+    transform: translateX(0%);
+}
+/*Styles for Linea de Transmision*/
+#lineaDeTransmision:hover .content_card{
+    transform: translateX(0%);
+}
+/*Styles for 3 column*/
+#Column:hover .content_card{
+    transform: translateX(0%);
+}
+/*Styles for Portafolio*/
+#portafolio:hover .content_card{
+    transform: translateX(0%);
+}
+/**/
 .skills-contact .skills{
     width: 50%;
     display: flex;
