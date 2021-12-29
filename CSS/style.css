@@ -124,10 +124,18 @@ header{
     justify-content: flex-start;
     align-items: center;
 }
-.media_links img{
+.media_links .media_icon{
     width: 40px;
     height: 40px;
     margin-left: 20px;
+}
+.media_links .media_button{
+    width: auto;
+    height: auto;
+}
+.media_links img{
+    width: 40px;
+    height: 40px;
     cursor: pointer;
 }
 .media_links .download_cv{
@@ -142,7 +150,7 @@ header{
     border-radius: 20px;
     cursor: pointer;
 }
-.media_links .contact{
+.media_links .contactButton{
     display: none;
 }
 section{
@@ -189,7 +197,7 @@ section h3{
     border-radius: 10px;
     margin: 0px 10px 20px;
     background-color: #6d8ffd57;
-    box-shadow: 2px 4px 8px 0px #00000098;
+    box-shadow: 2px 4px 12px 0px #00000069;
     display: flex;
 }
 .tables .skill{
@@ -265,6 +273,9 @@ section h3{
     padding: 1px;
     color: black;
 }
+section.portfolio{
+    margin-top: 20px;
+}
 .content_portfolio{
     width: 90%;
     display: flex;
@@ -273,7 +284,7 @@ section h3{
     flex-flow: column;
 }
 .content_portfolio h3{
-    margin: 0px 0px 22px;
+    margin: 20px 0px 22px;
 }
 .content_cards{
     width: auto;
@@ -430,68 +441,134 @@ section h3{
 #portafolio:hover .content_card{
     transform: translateX(0%);
 }
-/**/
-.skills-contact .skills{
-    width: 50%;
+/*Styles for contact*/
+.contact{
+    width: 100%;
+    margin: 0px 0px 40px;
     display: flex;
-    justify-content: center;
-    background-color: var(--blue);
+    flex-flow: column;
+    align-items: center;
 }
-.skills-contact .contact{
-    width: 50%;
-    height: 100%;
+.contact .content_contact{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    box-shadow: 2px 8px 10px 4px #00000069;
+}
+.content_contact .aside_contact{
+    padding-top: 20px;
     display: flex;
     align-items: center;
     flex-flow: column;
 }
-.contact h3{margin: 20px 0;
-    line-height: 40px;
-    font-size: 2rem;
-    font-weight: 500;
-    color: var(--strong-blue);
+.aside_contact .section_contact{
+    width: 90%;
+    height: 40px;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
 }
-.contact .content_contact{
+.aside_contact a{
     width: 60%;
-    margin: 20px 0;
+    height: auto;
 }
-.content_contact .section_contact{
+.aside_contact button{
     width: 100%;
-    height: 60px;
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    flex-flow: row;
-}
-.section_contact .image_contact{
-    width: 20%;
-    height: 60px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    background-color: var(--strong-blue);
+    border-radius: 10px;
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    border: 0;
+    padding: 10px;
+    margin-top: 10px;
     cursor: pointer;
 }
+.section_contact .image_contact{
+    width: 40px;
+    height: 40px;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image_contact img{
+    width: 36px;
+    height: auto;
+}
 .section_contact .text_contact{
-    width: 80%;
-    margin-left: 40px;
-    font-size: 1.5rem;
+    margin-left: 10px;
+    font-size: 1rem;
     font-weight: 400;
-    text-align: center;
+    line-height: 1rem;
 }
 .text_contact a{
     text-decoration: none;
     color: var(--blue);
 }
-.github_contact, .linkedin_contact{
-    width: 54px;
-    height: 54px;
-    padding: 3px;
+/*Styles for Formulary*/
+.content_contact .form_contact{
+    background-color: var(--strong-blue);
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+.form_contact form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.form_contact form label {
+    display: block;
+    color: #fff;
+    font-size: 1.2rem;
+}
+.form_contact form p {
+    margin: 0;
+    padding: 20px;
+}
+.form_contact form .block {
+    grid-column: 1 / 3;
+}
+.form_contact form button,
+.form_contact form input,
+.form_contact form textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid #6d8ffd57;
+}
+
+.form_contact form button {
+    background: #fff;
+    color: var(--strong-blue);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    border: 0;
+    padding: 10px;
+}
+.form_contact form textarea {
+    resize: none;
+}
+.form_contact form button:hover,
+.form_contact form button:focus,
+.aside_contact button:hover,
+.download_cv:hover {
+    background: #6d8ffd;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
 }
 footer{
     width: 100%;
     height: 80px;
     position: relative;
     bottom: 0px;
-    background-color: var(--blue);
+    background-color: var(--strong-blue);
 }
 .copyright{
     width: 100%;

@@ -137,13 +137,16 @@ header{
     display: flex;
     justify-content: center;
 }
+.media_links .media_icon{
+    display: none;
+}
 .media_links img{
     display: none;
 }
 .media_links .download_cv{
     display: none;
 }
-.media_links .contact{
+.media_links .contactButton{
     font-size: 1rem;
     line-height: 20px;
     font-weight: 500;
@@ -227,7 +230,21 @@ section{
     margin: 0px 20px 10px;
 }
 .content_portfolio h3{
-    margin: 5px 0px 10px;
+    margin: 10px 0px 10px;
+}
+.contact .content_contact{
+    width: 80%;
+    min-width: 320px;
+    display: flex;
+    flex-flow: column;
+}
+.content_contact .aside_contact{
+    width: 100%;
+    padding: 20px 0;
+}
+.aside_contact .section_contact{
+    width: 80%;
+    margin: 5px 0;
 }
 footer{
     height: 60px;
