@@ -441,6 +441,10 @@ section.portfolio{
 #portafolio:hover .content_card{
     transform: translateX(0%);
 }
+/*Styles for Huddle*/
+#huddle:hover .content_card{
+    transform: translateX(0%);
+}
 /*Styles for contact*/
 .contact{
     width: 100%;
