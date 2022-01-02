@@ -556,7 +556,7 @@ section.portfolio{
     padding: 10px;
 }
 .form_contact form textarea {
-    resize: none;
+    resize: vertical;
 }
 .form_contact form button:hover,
 .form_contact form button:focus,
