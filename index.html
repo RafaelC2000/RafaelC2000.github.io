@@ -381,18 +381,18 @@
                     </a>
                 </aside>
                 <div class="form_contact">
-                    <form action="" name="contacto" netlify>
+                    <form action="" name="contacto" netlify id="form">
                         <p>
                             <label>Nombre: </label>
-                            <input type="text" name="fullname">
+                            <input type="text" name="name" id="name">
                         </p>
                         <p>
                             <label>Correo: </label>
-                            <input type="email" name="email">
+                            <input type="email" name="email" id="email">
                         </p>
                         <p class="block">
                            <label>Mensaje: </label> 
-                            <textarea name="message" rows="3"></textarea>
+                            <textarea name="message" rows="3" id="message"></textarea>
                         </p>
                         <p class="block">
                             <button>
@@ -400,6 +400,7 @@
                             </button>
                         </p>
                     </form>
+                    <a href="mailto:me@leonidasesteban.com" id="emailTo"></a>   
                 </div>
             </div>
         </section>
@@ -412,5 +413,6 @@
         </footer>
         <script src="./JS/language.js"></script>
         <script src="./JS/menu.js"></script>
+        <script src="./JS/email.js"></script>
     </body>
 </html>
