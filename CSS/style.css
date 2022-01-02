@@ -558,9 +558,7 @@ section.portfolio{
     resize: vertical;
 }
 .form_contact form button:hover,
-.form_contact form button:focus,
-.aside_contact button:hover,
-.download_cv:hover {
+.form_contact form button:focus{
     background: #6d8ffd;
     color: #fff;
     transition: background-color 1s ease-out;
