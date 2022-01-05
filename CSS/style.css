@@ -19,7 +19,7 @@ header{
     position: relative;
     display: flex;
     justify-content: center;
-    background-image: linear-gradient(0deg, rgba(0, 23, 232, 0.35), rgba(0, 23, 232, 0.35)), url('https://i.ibb.co/7RMRHny/pexels-andre-3579433.jpg');
+    background-image: linear-gradient(0deg, rgba(0, 23, 232, 0.35), rgba(0, 23, 232, 0.35)), url('https://i.ibb.co/kmr7Vg4/pexels-andre-3579433-min.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment:local;
@@ -424,6 +424,18 @@ section.portfolio{
     border: 1px solid #a405b9;
     color: #a405b9;
 }
+.tag_jquery{
+    border: 1px solid #0868AC;
+    color: #0868AC;
+}
+.tag_bootstrap{
+    border: 1px solid #9013FE;
+    color: #9013FE;
+}
+.tag_sass{
+    border: 1px solid #CB6699;
+    color: #CB6699;
+}
 /*Styles for Carta de Smith*/
 #cartaDeSmith:hover .content_card{
     transform: translateX(0%);
@@ -442,6 +454,10 @@ section.portfolio{
 }
 /*Styles for Huddle*/
 #huddle:hover .content_card{
+    transform: translateX(0%);
+}
+/*Styles for Blackparadox*/
+#blackparadox:hover .content_card{
     transform: translateX(0%);
 }
 /*Styles for contact*/
